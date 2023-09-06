@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Overlapping Images</title>
+
+<style>
+
+body {
+
+margin: 0;
+
+}
+
+.container {
+
+position: relative;
+
+width: 500px;
+
+height: 500px;
+
+margin: 0 auto;
+
+}
+
+.image {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 500px;
+
+height: 500px;
+
+opacity: 0.5;
+
+transition: opacity 0.5s ease-in-out;
+
+}
+
+.image:hover {
+
+opacity: 1;
+
+z-index: 1;
+
+}
+
+.image1 {
+
+background-image: url("image1.jpg");
+
+}
+
+.image2 {
+
+background-image: url("image2.jpg");
+
+}
+
+.image3 {
+
+background-image: url("image3.jpg");
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="image image1"></div>
+
+<div class="image image2"></div>
+
+<div class="image image3"></div>
+
+</div>
+
+</body>
+
+</html>
